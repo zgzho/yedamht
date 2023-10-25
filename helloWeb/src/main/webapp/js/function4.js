@@ -5,6 +5,10 @@ document.getElementById('saveBtn').onclick = function(e){
     let age = document.getElementById('age').value;
     let height = document.getElementById('height').value;
     
+    if(!name||!age||!height){
+		alert('값 입력 부탁');
+		return;//함수종료
+	}
 
     function Member(name, age, height){
         this.name= name;
